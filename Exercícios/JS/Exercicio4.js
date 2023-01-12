@@ -7,4 +7,22 @@ deve ter seu background alterado para vermelho.
 o Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background
 deve ser alterado para verde.*/
 
+function focus() {
+  document.getElementById('bg').style.background = "yellow";
+}
+function validaBg() {
+  var valorBg = document.getElementById('bg').value;
+
+  if (valorBg.length < 3) {
+    document.getElementById('bg').style.background = "red";
+  } else {
+    document.getElementById('bg').style.background = "green";
+  }
+}
+
+document.getElementById('bg').addEventListener("focus", focus);
+
+
+
+
 
